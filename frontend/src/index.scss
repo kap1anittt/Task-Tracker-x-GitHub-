@@ -1,0 +1,53 @@
+// Импорт Bootstrap SCSS
+@import 'bootstrap/scss/bootstrap';
+
+// Кастомные стили (можно добавлять сюда или в отдельные файлы)
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f8f9fa; // Светлый фон Bootstrap
+  color: #212529; // Основной цвет текста Bootstrap
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Плавная анимация для ссылок и кнопок
+a, button {
+  transition: all 0.2s ease-in-out;
+}
+
+// Стили для скроллбара (опционально, можно оставить или убрать)
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ced4da; // Bootstrap серый
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #adb5bd; // Bootstrap темно-серый
+}
+
+// Стили для выделения текста
+::selection {
+  background-color: $primary; // Используем переменную Bootstrap
+  color: white;
+}
+
+// Базовый стиль для заголовков
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500; // Стандартный вес Bootstrap
+}
